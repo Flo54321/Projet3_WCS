@@ -25,7 +25,7 @@ def add_background(image_path):
 # 📌 Charger les données
 @st.cache_data
 def load_data():
-    file_path = "C:/Users/flori/Desktop/PROJET_3/STREAMLIT/BDD/NAGE_OLYMPIC_FINAL_V3_MODIF_BI.csv"
+    file_path = "BDD/NAGE_OLYMPIC_FINAL_V3_MODIF_BI.csv"
     df = pd.read_csv(file_path, sep=';', encoding='utf-8')
 
     # 🛠 Nettoyage des données
@@ -50,7 +50,8 @@ def load_data():
     return df
 
 # 📌 Appliquer l’image de fond
-add_background(r"C:\Users\flori\Desktop\PROJET_3\STREAMLIT\images\swimmer.jpg")
+add_background("images/swimmer.jpg")
+
 
 # 📌 Interface : Menu de navigation
 page = st.sidebar.selectbox("📌 Navigation", ["🏠 Accueil", "📊 Analyse des performances"], key="navigation_selectbox")
