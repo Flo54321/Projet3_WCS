@@ -50,7 +50,7 @@ def load_data():
     return df
 
 # 📌 Appliquer l’image de fond
-add_background("images\swimmer.jpg")
+add_background("images/swimmer.jpg")
 
 # 📌 Interface : Menu de navigation
 page = st.sidebar.selectbox("📌 Navigation", ["🏠 Accueil", "📊 Analyse des performances"], key="navigation_selectbox")
